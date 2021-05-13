@@ -28,4 +28,13 @@ document.addEventListener('keydown', function(e) {
             closeModal();
         }
     }
-})
+});
+document.addEventListener('keydown', function(f) {
+    // console.log(e.key);
+    console.log(f);
+    if (f.key === 'Enter') {
+        if (!modal.classList.contains('hidden')) {
+            closeModal();
+        }
+    }
+});
